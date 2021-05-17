@@ -1,7 +1,7 @@
 package dependencies
 
 object Releases {
-    const val applicationId = "pl.sose1.pictionary"
+    const val applicationId = "pl.sose1.todo"
 
     const val versionCode = 1
     const val versionName = "0.1"
@@ -17,7 +17,7 @@ private object Versions {
 
     const val coroutines = "1.3.8"
     const val liveData = "2.2.0"
-    const val navigation = "2.3.0"
+    const val navigation = "2.3.5"
     const val timber = "4.7.1"
     const val koin = "2.1.5"
     const val core = "1.3.1"
@@ -28,7 +28,6 @@ private object Versions {
     const val material = "1.2.0"
     const val recyclerView = "1.1.0"
     const val okHttp = "4.9.0"
-    const val colorPicker = "2.0"
     const val retrofit = "2.9.0"
     const val moshi = "2.4.0"
 }
@@ -60,8 +59,6 @@ object Libraries {
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val moshi = "com.squareup.retrofit2:converter-moshi:${Versions.moshi}"
-
-    const val colorPicker = "com.github.dhaval2404:colorpicker:${Versions.colorPicker}"
 }
 
 /*object TestLibraries {

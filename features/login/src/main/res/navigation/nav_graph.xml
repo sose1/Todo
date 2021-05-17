@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="pl.sose1.login.ui.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/mainFragmentToLoginFormFragment"
+            app:destination="@id/loginFormFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFormFragment"
+        android:name="pl.sose1.login.ui.loginForm.LoginFormFragment"
+        android:label="LoginFormFragment" >
+        <action
+            android:id="@+id/loginFormFragmentToRegisterFormFragment"
+            app:destination="@id/registerFormFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFormFragment"
+        android:name="pl.sose1.login.ui.register.RegisterFormFragment"
+        android:label="RegisterFormFragment" >
+        <action
+            android:id="@+id/registerFormFragmentToConfirmCodeFragment"
+            app:destination="@id/confirmCodeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmCodeFragment"
+        android:name="pl.sose1.login.ui.register.ConfirmCodeFragment"
+        android:label="ConfirmCodeFragment" />
+</navigation>
