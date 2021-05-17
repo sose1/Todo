@@ -44,6 +44,7 @@ dependencies {
     implementation(Libraries.kotlin)
 
     implementation(project(":features:home"))
+    implementation(project(":features:login"))
     implementation(project(":core"))
 
     implementation(Libraries.appCompat)

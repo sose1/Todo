@@ -1,3 +1,4 @@
+include(":features:login")
 include(":commons:base")
 include(":commons:ui")
 include(":core")
